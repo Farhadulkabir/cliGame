@@ -1,12 +1,29 @@
+#include "array.h"
 #include "getch.h"
-#include <iostream>
+#include <cstdlib>
 int main() {
-  int x, y;
-  std::cin >> x >> y;
+  constexpr int x{10}, y{10};
+  int p{x / 2}, q{y / 2};
   char arr[x][y];
-  for (int i = 0; i < x; i++) {
-    for (int n = 0; n < y; n++) {
-      arr[i][n] = ' ';
+  while (true) {
+    arr[p][q] = '@';
+    arrayPrint(arr, x, y);
+    arrayClear(arr, x, y);
+    char c = getch();
+    if (c == 'q') {
+      break;
+    } else if (c == 'w' && p > 1) {
+      system("clear");
+      p--;
+    } else if (c == 's' && p < x - 1) {
+      system("clear");
+      p++;
+    } else if (c == 'a' && q > 1) {
+      system("clear");
+      q--;
+    } else if (c == 'd' && q < y - 1) {
+      system("clear");
+      q++;
     }
   }
 }
