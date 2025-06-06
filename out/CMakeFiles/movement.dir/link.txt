@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/movement.dir/link.d CMakeFiles/movement.dir/src/getch.cpp.o CMakeFiles/movement.dir/src/main.cpp.o -o movement
