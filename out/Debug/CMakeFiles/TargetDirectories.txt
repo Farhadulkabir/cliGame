@@ -1,3 +1,0 @@
-/home/wadling/Desktop/cliGame/out/Debug/CMakeFiles/movement.dir
-/home/wadling/Desktop/cliGame/out/Debug/CMakeFiles/edit_cache.dir
-/home/wadling/Desktop/cliGame/out/Debug/CMakeFiles/rebuild_cache.dir
