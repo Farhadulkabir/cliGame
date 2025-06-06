@@ -1,0 +1,3 @@
+/home/wadling/Desktop/multiDimensionalArrays/out/CMakeFiles/movement.dir
+/home/wadling/Desktop/multiDimensionalArrays/out/CMakeFiles/edit_cache.dir
+/home/wadling/Desktop/multiDimensionalArrays/out/CMakeFiles/rebuild_cache.dir

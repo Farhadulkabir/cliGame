@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/wadling/Desktop/multiDimensionalArrays/out/Debug",
+  "command": "/usr/bin/c++  -I/home/wadling/Desktop/multiDimensionalArrays/include -g -std=gnu++23 -o CMakeFiles/movement.dir/src/getch.cpp.o -c /home/wadling/Desktop/multiDimensionalArrays/src/getch.cpp",
+  "file": "/home/wadling/Desktop/multiDimensionalArrays/src/getch.cpp",
+  "output": "CMakeFiles/movement.dir/src/getch.cpp.o"
+},
+{
+  "directory": "/home/wadling/Desktop/multiDimensionalArrays/out/Debug",
+  "command": "/usr/bin/c++  -I/home/wadling/Desktop/multiDimensionalArrays/include -g -std=gnu++23 -o CMakeFiles/movement.dir/src/main.cpp.o -c /home/wadling/Desktop/multiDimensionalArrays/src/main.cpp",
+  "file": "/home/wadling/Desktop/multiDimensionalArrays/src/main.cpp",
+  "output": "CMakeFiles/movement.dir/src/main.cpp.o"
+}
+]
