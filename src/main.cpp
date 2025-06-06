@@ -12,13 +12,13 @@ int main() {
     char c = getch();
     if (c == 'q') {
       break;
-    } else if (c == 'w' && p > 1) {
+    } else if (c == 'w' && p > 0) {
       system("clear");
       p--;
     } else if (c == 's' && p < x - 1) {
       system("clear");
       p++;
-    } else if (c == 'a' && q > 1) {
+    } else if (c == 'a' && q > 0) {
       system("clear");
       q--;
     } else if (c == 'd' && q < y - 1) {
