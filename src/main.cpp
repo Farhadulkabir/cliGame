@@ -2,7 +2,6 @@
 #include "getch.h"
 #include <cstdlib>
 int main() {
-  constexpr int x{10}, y{10};
   int p{x / 2}, q{y / 2};
   char arr[x][y];
   while (true) {
