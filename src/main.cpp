@@ -5,10 +5,10 @@ int main() {
   int p{x / 2}, q{y / 2};
   char arr[x][y];
   while (true) {
-    arr[p][q] = '@';
     std::cout << "\033[2J\033[H";
-    arrayPrint(arr, x, y);
     arrayClear(arr, x, y);
+    arr[p][q] = '@';
+    arrayPrint(arr, x, y);
     char c = getch();
     if (c == 'q') {
       break;
