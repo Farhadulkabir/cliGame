@@ -10,16 +10,38 @@ int main() {
     arr[p][q] = '@';
     arrayPrint(arr, x, y);
     char c = getch();
-    if (c == 'q') {
-      break;
-    } else if (c == 'w' && p > 0) {
-      p--;
-    } else if (c == 's' && p < x - 1) {
-      p++;
-    } else if (c == 'a' && q > 0) {
-      q--;
-    } else if (c == 'd' && q < y - 1) {
-      q++;
+
+    switch (c) {
+    case 'w':
+      if (p == 0) {
+        p = x - 1;
+      } else {
+        p--;
+      }
+      break; // Up
+    case 's':
+      if (p == x - 1) {
+        p = 0;
+      } else {
+        p++;
+      }
+      break; // Down
+    case 'a':
+      if (q == 0) {
+        q = y - 1;
+      } else {
+        q--;
+      }
+      break; // Left
+    case 'd':
+      if (q == y - 1) {
+        q = 0;
+      } else {
+        q++;
+      }
+      break; // Right
+    case 'q':
+      return 0; // Quit
     }
   }
 }
