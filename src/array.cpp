@@ -17,8 +17,8 @@ void arrayPrint(char arr[][y]) {
 }
 void genBorder(char arr[][y]) {
   for (int i = 0; i < x; i++) {
-    arr[i][0] = '-';
-    arr[i][y - 1] = '-';
+    arr[i][0] = '_';
+    arr[i][y - 1] = '_';
   }
   for (int n = 0; n < y; n++) {
     arr[0][n] = '|';
