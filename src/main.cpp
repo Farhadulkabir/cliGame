@@ -4,12 +4,12 @@
 int main() {
   int p{x / 2}, q{y / 2};
   char arr[x][y];
-  arrayClear(arr, x, y);
-  genBorder(arr, x, y);
+  arrayClear(arr);
+  genBorder(arr);
   while (true) {
     std::cout << "\033[2J\033[H";
     arr[p][q] = '@';
-    arrayPrint(arr, x, y);
+    arrayPrint(arr);
     arr[p][q] = ' ';
     char c = getch();
 
