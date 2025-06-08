@@ -15,3 +15,13 @@ void arrayPrint(char arr[][y], int x, int y) {
     std::cout << std::endl;
   }
 }
+void genBorder(char arr[][y], int x, int y) {
+  for (int i = 0; i < x; i++) {
+    arr[i][0] = '-';
+    arr[i][y - 1] = '-';
+  }
+  for (int n = 0; n < y; n++) {
+    arr[0][n] = '|';
+    arr[x - 1][n] = '|';
+  }
+}
