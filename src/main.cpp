@@ -8,39 +8,30 @@ int main() {
   genBorder(arr);
   while (true) {
     std::cout << "\033[2J\033[H";
+    if (p == 0)
+      p = x - 2;
+    else if (p == x - 1)
+      p = 1;
+    else if (q == 0)
+      q = y - 2;
+    else if (q == y - 1)
+      q = 1;
     arr[p][q] = '@';
     arrayPrint(arr);
     arr[p][q] = ' ';
     char c = getch();
-
     switch (c) {
     case 'w':
-      if (p == 1) {
-        p = x - 2;
-      } else {
-        p--;
-      }
+      p--;
       break; // Up
     case 's':
-      if (p == x - 2) {
-        p = 1;
-      } else {
-        p++;
-      }
+      p++;
       break; // Down
     case 'a':
-      if (q == 1) {
-        q = y - 2;
-      } else {
-        q--;
-      }
+      q--;
       break; // Left
     case 'd':
-      if (q == y - 2) {
-        q = 1;
-      } else {
-        q++;
-      }
+      q++;
       break; // Right
     case 'q':
       return 0; // Quit
