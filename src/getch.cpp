@@ -3,6 +3,7 @@
 #include <termios.h>
 #include <unistd.h>
 
+// idfk what this code does, I just copypasted it ;-;
 char getch() {
   char buf = 0;
   struct termios old = {0};
